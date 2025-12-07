@@ -1,0 +1,24 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+h1, h2, h3, h4, .brand-font {
+    font-family: 'Playfair Display', serif;
+}
+.gold-text {
+    color: #C5A059;
+}
+.gold-bg {
+    background-color: #C5A059;
+}
+.navy-bg {
+    background-color: #0F172A;
+}
+/* Hover card effect like Geberindo but smoother */
+.service-card {
+    transition: all 0.3s ease-in-out;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #C5A059;
+}
