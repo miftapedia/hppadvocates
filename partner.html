@@ -74,20 +74,15 @@
                 </div>
 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-6 items-center">
-                    <a href="index.html" data-i18n="nav.home" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Home</a>
-                    <a href="our-story.html" data-i18n="nav.ourStory" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Our Story</a>
-                    <a href="visi-misi.html" data-i18n="nav.visiMisi" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Visi &amp; Misi</a>
-                    <a href="layanan.html" data-i18n="nav.layanan" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Layanan</a>
-                    <a href="partner.html" data-i18n="nav.partner" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Partner</a>
-                    <a href="contact.html" class="navy-bg text-white px-5 py-2 rounded-full font-medium hover:bg-[#C5A059] transition shadow-lg">
-                        <span data-i18n="nav.contact">Contact</span>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Home</a>
+                    <a href="our-story.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Our Story</a>
+                    <a href="visi-misi.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Visi & Misi</a>
+                    <a href="layanan.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Layanan</a>
+                    <a href="partner.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Partner</a>
+                    <a href="contact.html" class="navy-bg text-white px-6 py-2 rounded-full font-medium hover:bg-[#C5A059] transition shadow-lg">
+                        Contact
                     </a>
-                    <!-- Language toggle (ID/EN) -->
-                    <div id="lang-toggle" class="ml-4 flex items-center bg-gray-100 rounded-full p-1" role="group" aria-label="Language switch">
-                        <button data-lang-btn="id" aria-label="Bahasa Indonesia" class="flex items-center px-3 py-1 rounded-full text-sm font-semibold">ID</button>
-                        <button data-lang-btn="en" aria-label="English" class="flex items-center px-3 py-1 rounded-full text-sm font-semibold">EN</button>
-                    </div>
                 </div>
 
 
@@ -112,60 +107,66 @@
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 data-i18n="partner.title" class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Mitra Kerja Sama Kami</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Mitra Kerja Sama Kami</h2>
                 <div class="w-24 h-1 gold-bg mx-auto rounded"></div>
-                <p data-i18n="partner.desc" class="mt-4 text-gray-600 max-w-2xl mx-auto">Kami bekerja sama dengan berbagai institusi dan profesional terkemuka untuk memberikan layanan hukum yang komprehensif dan berkualitas tinggi.</p>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Kami bekerja sama dengan berbagai institusi dan profesional terkemuka untuk memberikan layanan hukum yang komprehensif dan berkualitas tinggi.</p>
             </div>
 
-            <!-- Client Sectors & Professional Network -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 items-center">
-                <div class="p-8 rounded-lg">
-                    <h3 class="text-2xl font-bold mb-4 text-slate-900">Kami dipercaya oleh berbagai klien</h3>
-                    <p class="text-gray-600 mb-6">Kami dipercaya oleh berbagai klien dari berbagai sektor, termasuk:</p>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <i class="fas fa-star gold-text mr-4 mt-1"></i>
-                            <span class="text-gray-700">Perusahaan Startup</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-star gold-text mr-4 mt-1"></i>
-                            <span class="text-gray-700">Perdagangan dan Distribusi</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-star gold-text mr-4 mt-1"></i>
-                            <span class="text-gray-700">Perusahaan Manufaktur</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-star gold-text mr-4 mt-1"></i>
-                            <span class="text-gray-700">Usaha Kecil dan Menengah (UMKM)</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-star gold-text mr-4 mt-1"></i>
-                            <span class="text-gray-700">Perorangan (High-Net-Worth Individuals)</span>
-                        </li>
-                    </ul>
+            <!-- Partner Categories -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Law Firms -->
+                <div class="partner-card bg-slate-50 p-8 rounded-lg text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                        <i class="fas fa-gavel text-3xl gold-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-slate-800">Firma Hukum</h3>
+                    <p class="text-gray-600 mb-6">Kolaborasi dengan firma hukum nasional dan internasional untuk kasus lintas yurisdiksi.</p>
+                    <div class="space-y-3">
+                        <div class="bg-white p-3 rounded shadow-sm">
+                            <p class="font-semibold text-slate-900">PERADI Jakarta</p>
+                            <p class="text-sm text-gray-500">Asosiasi Advokat Indonesia</p>
+                        </div>
+                        <div class="bg-white p-3 rounded shadow-sm">
+                            <p class="font-semibold text-slate-900">International Law Firms</p>
+                            <p class="text-sm text-gray-500">Global Legal Network</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="bg-slate-50 p-8 rounded-lg">
-                    <h3 class="text-2xl font-bold mb-4 text-slate-900">Jaringan Profesional</h3>
-                        <p data-i18n="partner.network.desc" class="text-gray-600 mb-6">Kami memiliki jaringan yang kuat dengan notaris, akuntan publik, konsultan pajak, dan konsultan bisnis untuk memberikan solusi yang terintegrasi bagi klien.</p>
-                        <h3 data-i18n="partner.network.title" class="text-2xl font-bold mb-4 text-slate-900">Jaringan Profesional</h3>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="flex items-center">
-                            <i class="fas fa-user-tie gold-text mr-3"></i>
-                            <span class="text-gray-700">Notaris</span>
+                <!-- Financial Institutions -->
+                <div class="partner-card bg-slate-50 p-8 rounded-lg text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                        <i class="fas fa-university text-3xl gold-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-slate-800">Institusi Keuangan</h3>
+                    <p class="text-gray-600 mb-6">Bekerja sama dengan bank dan lembaga keuangan untuk layanan hukum korporasi.</p>
+                    <div class="space-y-3">
+                        <div class="bg-white p-3 rounded shadow-sm">
+                            <p class="font-semibold text-slate-900">Bank Partners</p>
+                            <p class="text-sm text-gray-500">Legal Advisory Services</p>
                         </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-calculator gold-text mr-3"></i>
-                            <span class="text-gray-700">Akuntan Publik</span>
+                        <div class="bg-white p-3 rounded shadow-sm">
+                            <p class="font-semibold text-slate-900">Financial Consultants</p>
+                            <p class="text-sm text-gray-500">Corporate Finance Law</p>
                         </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-file-invoice-dollar gold-text mr-3"></i>
-                            <span class="text-gray-700">Konsultan Pajak</span>
+                    </div>
+                </div>
+
+                <!-- Professional Networks -->
+                <div class="partner-card bg-slate-50 p-8 rounded-lg text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-md">
+                        <i class="fas fa-users text-3xl gold-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-slate-800">Jaringan Profesional</h3>
+                    <p class="text-gray-600 mb-6">Kolaborasi dengan konsultan, auditor, dan profesional lainnya untuk solusi terintegrasi.</p>
+                    <div class="space-y-3">
+                        <div class="bg-white p-3 rounded shadow-sm">
+                            <p class="font-semibold text-slate-900">Certified Auditors</p>
+                            <p class="text-sm text-gray-500">Financial & Legal Audit</p>
                         </div>
-                        <div class="flex items-center">
-                            <i class="fas fa-briefcase gold-text mr-3"></i>
-                            <span class="text-gray-700">Konsultan Bisnis</span>
+                        <div class="bg-white p-3 rounded shadow-sm">
+                            <p class="font-semibold text-slate-900">Tax Consultants</p>
+                            <p class="text-sm text-gray-500">Tax Law Advisory</p>
                         </div>
                     </div>
                 </div>
@@ -204,34 +205,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- KEY PARTNERS / ADVISORS -->
-    <section class="py-12 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8">
-                <h3 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2" data-i18n="partner.people.title">Key Partners & Advisors</h3>
-                <p class="text-gray-600 max-w-2xl mx-auto" data-i18n="partner.people.subtitle">Profesional yang berkontribusi langsung pada layanan dan strategi hukum kami.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <article class="partner-card p-6 rounded-lg border border-gray-100 bg-white shadow-sm">
-                    <header class="mb-3">
-                        <h4 class="text-lg font-bold text-slate-900" data-i18n="partner.people.indra.name">Indra Purnama Pamungkas</h4>
-                        <div class="text-sm text-gray-500">Spesialis Kompensasi &amp; Benefit</div>
-                    </header>
-                    <p class="text-gray-600" data-i18n="partner.people.indra.desc">Dengan pengalaman yang luas di bidang manajemen sumber daya manusia, Indra berperan sebagai Spesialis Kompensasi dan Benefit, Konsultan Human Capital, serta aktif dalam berbagai kegiatan yang mendukung penguatan hubungan industrial di lingkungan kerja.</p>
-                </article>
-
-                <article class="partner-card p-6 rounded-lg border border-gray-100 bg-white shadow-sm">
-                    <header class="mb-3">
-                        <h4 class="text-lg font-bold text-slate-900" data-i18n="partner.people.gladis.name">Gladis Gayatri</h4>
-                        <div class="text-sm text-gray-500">Konsultan Kontrak &amp; Hukum Perdata</div>
-                    </header>
-                    <p class="text-gray-600" data-i18n="partner.people.gladis.desc">Dengan pengalaman yang diperoleh melalui keterlibatan dalam Lembaga Kajian Hukum serta organisasi kemahasiswaan, Gladis memiliki keahlian sebagai konsultan spesialis dalam penyusunan kontrak, hukum perdata, kepailitan, serta di bidang persaingan usaha.</p>
-                </article>
             </div>
         </div>
     </section>
@@ -343,10 +316,6 @@
                 <i class="fas fa-user text-xl mb-1"></i>
                 <span class="text-xs font-medium">Our Story</span>
             </a>
-            <a href="visi-misi.html" class="flex flex-col items-center text-gray-600 hover:text-[#C5A059] transition">
-                <i class="fas fa-bullseye text-xl mb-1"></i>
-                <span class="text-xs font-medium">Visi &amp; Misi</span>
-            </a>
             <a href="layanan.html" class="flex flex-col items-center text-gray-600 hover:text-[#C5A059] transition">
                 <i class="fas fa-briefcase text-xl mb-1"></i>
                 <span class="text-xs font-medium">Layanan</span>
@@ -355,11 +324,9 @@
                 <i class="fas fa-handshake text-xl mb-1"></i>
                 <span class="text-xs font-medium">Partner</span>
             </a>
-            <a href="contact.html" class="flex flex-col items-center transition">
-                <div class="bg-[#0F172A] w-10 h-10 rounded-full flex items-center justify-center mb-1">
-                    <i class="fas fa-phone text-white"></i>
-                </div>
-                <span class="text-xs font-medium text-slate-900">Contact</span>
+            <a href="contact.html" class="flex flex-col items-center text-gray-600 hover:text-[#C5A059] transition">
+                <i class="fas fa-phone text-xl mb-1"></i>
+                <span class="text-xs font-medium">Contact</span>
             </a>
         </div>
     </nav>
@@ -377,4 +344,3 @@
 
 </body>
 </html>
-<script src="js/i18n.js"></script>

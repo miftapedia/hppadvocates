@@ -75,20 +75,15 @@
                 </div>
                 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-6 items-center">
-                    <a href="index.html" data-i18n="nav.home" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Home</a>
-                    <a href="our-story.html" data-i18n="nav.ourStory" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Our Story</a>
-                    <a href="visi-misi.html" data-i18n="nav.visiMisi" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Visi &amp; Misi</a>
-                    <a href="layanan.html" data-i18n="nav.layanan" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Layanan</a>
-                    <a href="partner.html" data-i18n="nav.partner" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Partner</a>
-                    <a href="contact.html" class="navy-bg text-white px-5 py-2 rounded-full font-medium hover:bg-[#C5A059] transition shadow-lg">
-                        <span data-i18n="nav.contact">Contact</span>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Home</a>
+                    <a href="our-story.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Our Story</a>
+                    <a href="visi-misi.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Visi & Misi</a>
+                    <a href="layanan.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Layanan</a>
+                    <a href="partner.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Partner</a>
+                    <a href="contact.html" class="navy-bg text-white px-6 py-2 rounded-full font-medium hover:bg-[#C5A059] transition shadow-lg">
+                        Contact
                     </a>
-                    <!-- Language toggle (flags) -->
-                    <div id="lang-toggle" class="ml-4 flex items-center bg-gray-100 rounded-full p-1" role="group" aria-label="Language switch">
-                        <button data-lang-btn="id" aria-label="Bahasa Indonesia" class="flex items-center px-3 py-1 rounded-full text-sm font-semibold">ID</button>
-                        <button data-lang-btn="en" aria-label="English" class="flex items-center px-3 py-1 rounded-full text-sm font-semibold">EN</button>
-                    </div>
                 </div>
 
 
@@ -100,15 +95,19 @@
     <section id="home" class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');">
         <div class="absolute inset-0 bg-slate-900 bg-opacity-80"></div>
         <div class="relative z-10 text-center px-4 max-w-4xl mx-auto slide-up">
-            <h1 data-i18n="home.hero.title" class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"></h1>
-            <p data-i18n="home.hero.subtitle" class="text-lg md:text-xl text-gray-300 mb-10 font-light"></p>
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                Your Challenge, <span class="gold-text italic">Our Solution.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 font-light">
+                Mitra hukum strategis yang memadukan integritas dan wawasan bisnis untuk melindungi aset serta memastikan kepatuhan perusahaan Anda.
+            </p>
             <div class="flex flex-col md:flex-row gap-4 justify-center">
                 <a href="https://wa.me/6281282820904?text=Halo%20HPP%20Law%20Office,%20saya%20tertarik%20untuk%20konsultasi%20hukum." 
                    class="gold-bg text-white px-8 py-4 rounded shadow-lg font-bold hover:bg-yellow-600 transition flex items-center justify-center gap-2">
-                    <i class="fab fa-whatsapp text-xl"></i> <span data-i18n="home.cta.consult"></span>
+                    <i class="fab fa-whatsapp text-xl"></i> KONSULTASI GRATIS
                 </a>
                 <a href="#services" class="border border-white text-white px-8 py-4 rounded hover:bg-white hover:text-slate-900 transition font-medium">
-                    <span data-i18n="home.cta.learnServices"></span>
+                    Pelajari Layanan
                 </a>
             </div>
         </div>
@@ -120,28 +119,28 @@
             <div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-center divide-x divide-gray-100">
                 <div class="p-4 group">
                     <i class="fas fa-balance-scale text-4xl gold-text mb-4 group-hover:scale-110 transition"></i>
-                    <h3 data-i18n="values.integrity" class="font-bold text-gray-900"></h3>
-                    <p data-i18n="values.integrity.desc" class="text-sm text-gray-500 mt-2"></p>
+                    <h3 class="font-bold text-gray-900">Integritas</h3>
+                    <p class="text-sm text-gray-500 mt-2">Fondasi utama penanganan kasus.</p>
                 </div>
                 <div class="p-4 group">
                     <i class="fas fa-award text-4xl gold-text mb-4 group-hover:scale-110 transition"></i>
-                    <h3 data-i18n="values.excellence" class="font-bold text-gray-900"></h3>
-                    <p data-i18n="values.excellence.desc" class="text-sm text-gray-500 mt-2"></p>
+                    <h3 class="font-bold text-gray-900">Keunggulan</h3>
+                    <p class="text-sm text-gray-500 mt-2">Standar kualitas layanan tertinggi.</p>
                 </div>
                 <div class="p-4 group">
                     <i class="fas fa-handshake text-4xl gold-text mb-4 group-hover:scale-110 transition"></i>
-                    <h3 data-i18n="values.collaboration" class="font-bold text-gray-900"></h3>
-                    <p data-i18n="values.collaboration.desc" class="text-sm text-gray-500 mt-2"></p>
+                    <h3 class="font-bold text-gray-900">Kolaborasi</h3>
+                    <p class="text-sm text-gray-500 mt-2">Sinergi tim untuk solusi terbaik.</p>
                 </div>
                 <div class="p-4 group">
                     <i class="fas fa-lightbulb text-4xl gold-text mb-4 group-hover:scale-110 transition"></i>
-                    <h3 data-i18n="values.innovation" class="font-bold text-gray-900"></h3>
-                    <p data-i18n="values.innovation.desc" class="text-sm text-gray-500 mt-2"></p>
+                    <h3 class="font-bold text-gray-900">Inovasi</h3>
+                    <p class="text-sm text-gray-500 mt-2">Solusi hukum cerdas & efisien.</p>
                 </div>
                 <div class="p-4 group">
                     <i class="fas fa-shield-alt text-4xl gold-text mb-4 group-hover:scale-110 transition"></i>
-                    <h3 data-i18n="values.responsibility" class="font-bold text-gray-900"></h3>
-                    <p data-i18n="values.responsibility.desc" class="text-sm text-gray-500 mt-2"></p>
+                    <h3 class="font-bold text-gray-900">Tanggung Jawab</h3>
+                    <p class="text-sm text-gray-500 mt-2">Dedikasi penuh pada hasil.</p>
                 </div>
             </div>
         </div>
@@ -151,9 +150,9 @@
     <section id="services" class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 data-i18n="services.title" class="text-3xl md:text-4xl font-bold text-slate-900 mb-4"></h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Area Praktik & Layanan</h2>
                 <div class="w-24 h-1 gold-bg mx-auto rounded"></div>
-                <p data-i18n="services.desc" class="mt-4 text-gray-600 max-w-2xl mx-auto"></p>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Kami menyediakan solusi hukum terintegrasi mulai dari pendirian badan usaha, litigasi, hingga perlindungan aset intelektual.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -162,9 +161,11 @@
                     <div class="w-14 h-14 bg-slate-100 rounded-full flex items-center justify-center mb-6 text-slate-900">
                         <i class="fas fa-building text-2xl"></i>
                     </div>
-                    <h3 data-i18n="services.corp.title" class="text-xl font-bold mb-3 text-slate-800"></h3>
-                    <p data-i18n="services.corp.desc" class="text-gray-600 text-sm leading-relaxed mb-4"></p>
-                    <a href="#" class="text-[#C5A059] font-bold text-sm hover:underline"><span data-i18n="services.readMoreLabel"></span></a>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Hukum Bisnis & Korporasi</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Pendirian PT, Perizinan OSS, Legal Audit, Compliance System, hingga merger dan akuisisi. Kami memastikan bisnis Anda berjalan sesuai regulasi.
+                    </p>
+                    <a href="#" class="text-[#C5A059] font-bold text-sm hover:underline">Selengkapnya &rarr;</a>
                 </div>
 
                 <!-- Service 2 -->
@@ -172,9 +173,11 @@
                     <div class="w-14 h-14 bg-slate-100 rounded-full flex items-center justify-center mb-6 text-slate-900">
                         <i class="fas fa-copyright text-2xl"></i>
                     </div>
-                    <h3 data-i18n="services.haki.title" class="text-xl font-bold mb-3 text-slate-800"></h3>
-                    <p data-i18n="services.haki.desc" class="text-gray-600 text-sm leading-relaxed mb-4"></p>
-                    <a href="#" class="text-[#C5A059] font-bold text-sm hover:underline"><span data-i18n="services.readMoreLabel"></span></a>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Kekayaan Intelektual (HAKI)</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Pendaftaran dan perlindungan Merek, Paten, Hak Cipta, serta Desain Industri. Lindungi aset tak berwujud Anda dari sengketa.
+                    </p>
+                    <a href="#" class="text-[#C5A059] font-bold text-sm hover:underline">Selengkapnya &rarr;</a>
                 </div>
 
                 <!-- Service 3 -->
@@ -182,9 +185,11 @@
                     <div class="w-14 h-14 bg-slate-100 rounded-full flex items-center justify-center mb-6 text-slate-900">
                         <i class="fas fa-gavel text-2xl"></i>
                     </div>
-                    <h3 data-i18n="services.litigation.title" class="text-xl font-bold mb-3 text-slate-800"></h3>
-                    <p data-i18n="services.litigation.desc" class="text-gray-600 text-sm leading-relaxed mb-4"></p>
-                    <a href="#" class="text-[#C5A059] font-bold text-sm hover:underline"><span data-i18n="services.readMoreLabel"></span></a>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Litigasi & Sengketa</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Pendampingan hukum di Pengadilan Negeri hingga Mahkamah Agung (Pidana/Perdata), serta penyelesaian via Mediasi & Arbitrase.
+                    </p>
+                    <a href="#" class="text-[#C5A059] font-bold text-sm hover:underline">Selengkapnya &rarr;</a>
                 </div>
 
                  <!-- Service 4 -->
@@ -192,9 +197,11 @@
                     <div class="w-14 h-14 bg-slate-100 rounded-full flex items-center justify-center mb-6 text-slate-900">
                         <i class="fas fa-users-cog text-2xl"></i>
                     </div>
-                    <h3 data-i18n="services.industrial.title" class="text-xl font-bold mb-3 text-slate-800"></h3>
-                    <p data-i18n="services.industrial.list.1" class="text-gray-600 text-sm leading-relaxed mb-4"></p>
-                    <a href="#" class="text-[#C5A059] font-bold text-sm hover:underline"><span data-i18n="services.readMoreLabel"></span></a>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Hubungan Industrial</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Penyusunan Peraturan Perusahaan (PP), PKB, penanganan PHK, dan penyelesaian perselisihan hubungan industrial.
+                    </p>
+                    <a href="#" class="text-[#C5A059] font-bold text-sm hover:underline">Selengkapnya &rarr;</a>
                 </div>
 
                  <!-- Service 5 -->
@@ -202,9 +209,11 @@
                     <div class="w-14 h-14 bg-slate-100 rounded-full flex items-center justify-center mb-6 text-slate-900">
                         <i class="fas fa-landmark text-2xl"></i>
                     </div>
-                    <h3 data-i18n="services.property.title" class="text-xl font-bold mb-3 text-slate-800"></h3>
-                    <p data-i18n="services.property.desc" class="text-gray-600 text-sm leading-relaxed mb-4"></p>
-                    <a href="#" class="text-[#C5A059] font-bold text-sm hover:underline"><span data-i18n="services.readMoreLabel"></span></a>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Properti & Pertanahan</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Due Diligence tanah, jual beli, sewa menyewa, dan penyelesaian sengketa agraria secara komprehensif.
+                    </p>
+                    <a href="#" class="text-[#C5A059] font-bold text-sm hover:underline">Selengkapnya &rarr;</a>
                 </div>
 
                  <!-- Service 6 -->
@@ -212,9 +221,11 @@
                     <div class="w-14 h-14 bg-slate-100 rounded-full flex items-center justify-center mb-6 text-slate-900">
                         <i class="fas fa-user-friends text-2xl"></i>
                     </div>
-                    <h3 data-i18n="services.family.title" class="text-xl font-bold mb-3 text-slate-800"></h3>
-                    <p data-i18n="services.family.desc" class="text-gray-600 text-sm leading-relaxed mb-4"></p>
-                    <a href="#" class="text-[#C5A059] font-bold text-sm hover:underline"><span data-i18n="services.readMoreLabel"></span></a>
+                    <h3 class="text-xl font-bold mb-3 text-slate-800">Hukum Keluarga</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        Pewarisan, Wasiat, Perjanjian Pranikah, dan pembagian Harta Bersama dengan pendekatan yang bijaksana.
+                    </p>
+                    <a href="#" class="text-[#C5A059] font-bold text-sm hover:underline">Selengkapnya &rarr;</a>
                 </div>
             </div>
         </div>
@@ -413,10 +424,6 @@
                 <i class="fas fa-user text-xl mb-1"></i>
                 <span class="text-xs font-medium">Our Story</span>
             </a>
-            <a href="visi-misi.html" class="flex flex-col items-center text-gray-600 hover:text-[#C5A059] transition">
-                <i class="fas fa-bullseye text-xl mb-1"></i>
-                <span class="text-xs font-medium">Visi &amp; Misi</span>
-            </a>
             <a href="layanan.html" class="flex flex-col items-center text-gray-600 hover:text-[#C5A059] transition">
                 <i class="fas fa-briefcase text-xl mb-1"></i>
                 <span class="text-xs font-medium">Layanan</span>
@@ -425,11 +432,9 @@
                 <i class="fas fa-handshake text-xl mb-1"></i>
                 <span class="text-xs font-medium">Partner</span>
             </a>
-            <a href="contact.html" class="flex flex-col items-center transition">
-                <div class="bg-[#0F172A] w-10 h-10 rounded-full flex items-center justify-center mb-1">
-                    <i class="fas fa-phone text-white"></i>
-                </div>
-                <span class="text-xs font-medium text-slate-900">Contact</span>
+            <a href="contact.html" class="flex flex-col items-center text-gray-600 hover:text-[#C5A059] transition">
+                <i class="fas fa-phone text-xl mb-1"></i>
+                <span class="text-xs font-medium">Contact</span>
             </a>
         </div>
     </nav>
@@ -447,4 +452,3 @@
 
 </body>
 </html>
-<script src="js/i18n.js"></script>
