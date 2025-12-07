@@ -23,13 +23,30 @@ h1, h2, h3, h4, .brand-font {
     border-bottom: 3px solid #C5A059;
 }
 
-/* Language switch small styling */
+.lang-switch-container {
+    display: flex;
+    border-radius: 9999px;
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
 .lang-switch {
-    background: transparent;
-    border: 1px solid rgba(15,23,42,0.06);
-    line-height: 1;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
-.lang-switch[aria-pressed="true"], .lang-switch.active {
-    box-shadow: 0 0 0 3px rgba(197,160,89,0.12);
+
+.lang-switch.active {
+    background-color: #C5A059;
+    color: #ffffff;
 }
-.lang-switch:focus { outline: none; }
+
+.lang-switch:not(.active):hover {
+    background-color: #e5e7eb;
+}
