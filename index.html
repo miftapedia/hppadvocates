@@ -35,14 +35,38 @@
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
             border-bottom: 3px solid #C5A059;
         }
+
+        /* Beautiful quick animations */
+        .fade-in {
+            animation: fadeIn 0.4s ease-out;
+        }
+        .slide-up {
+            animation: slideUp 0.5s ease-out;
+        }
+        .scale-in {
+            animation: scaleIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes scaleIn {
+            from { transform: scale(0.95); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
     <!-- NAVIGATION -->
-    <nav class="fixed w-full z-50 bg-white shadow-md transition-all duration-300">
+    <nav class="fixed w-full z-50 bg-white shadow-md transition-all duration-300 fade-in">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
+            <div class="flex md:justify-between justify-center items-center h-20">
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center gap-3">
                     <div class="text-3xl text-slate-900 brand-font font-bold tracking-wide">
@@ -62,12 +86,7 @@
                     </a>
                 </div>
 
-                <!-- Mobile menu button -->
-                <div class="md:hidden flex items-center">
-                    <button class="text-gray-700 hover:text-gray-900 focus:outline-none">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
-                </div>
+
             </div>
         </div>
     </nav>
@@ -75,7 +94,7 @@
     <!-- HERO SECTION -->
     <section id="home" class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');">
         <div class="absolute inset-0 bg-slate-900 bg-opacity-80"></div>
-        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto">
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto slide-up">
             <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
                 Your Challenge, <span class="gold-text italic">Our Solution.</span>
             </h1>
@@ -314,7 +333,7 @@
     <!-- FOOTER -->
     <footer class="navy-bg text-white pt-16 pb-8 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-12">
                 <!-- Brand -->
                 <div class="col-span-1 md:col-span-1">
                     <h3 class="text-2xl brand-font font-bold mb-6">HPP <span class="text-[#C5A059]">LAW OFFICE</span></h3>
@@ -342,28 +361,48 @@
                 <!-- Contact -->
                 <div>
                     <h4 class="text-lg font-bold mb-6 text-[#C5A059]">Hubungi Kami</h4>
-                    <ul class="space-y-3 text-sm text-gray-300">
-                        <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-[#C5A059]"></i> 
-                            <span>Menara 165, Lantai 17 Unit A, Jl. TB Simatupang Kav. 1, Jakarta Selatan 12650</span>
-                        </li>
-                        <li class="flex items-center"><i class="fas fa-phone mt-1 mr-3 text-[#C5A059]"></i> 
-                            <span>(021) 38820017</span>
-                        </li>
-                        <li class="flex items-center"><i class="fab fa-whatsapp mt-1 mr-3 text-[#C5A059]"></i> 
-                            <span>+62 812 8282 0904</span>
-                        </li>
-                        <li class="flex items-center"><i class="fas fa-envelope mt-1 mr-3 text-[#C5A059]"></i> 
-                            <span>law@hppadvocates.com</span>
-                        </li>
-                    </ul>
+                    <div class="mb-6">
+                        <h5 class="font-bold text-white mb-2">Kantor Pusat (Head Office)</h5>
+                        <ul class="space-y-2 text-sm text-gray-300">
+                            <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-[#C5A059]"></i> 
+                                <span>Menara 165, Lantai 17 Unit A, Jl. Simatupang Kav. 1 Rt. 003 Rw. 003 Kel. Cilandak Timur, Kec Pasar Minggu Kota Administrasi Jakarta Selatan, DKI Jakarta 12650</span>
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-phone mt-1 mr-3 text-[#C5A059]"></i> 
+                                <span>Telp/Fax: (021) 38820017 / (021) 38820010</span>
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-envelope mt-1 mr-3 text-[#C5A059]"></i> 
+                                <span>law@hppadvocates.com</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-white mb-2">Kantor Cabang (Branch Office)</h5>
+                        <ul class="space-y-2 text-sm text-gray-300">
+                            <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-[#C5A059]"></i> 
+                                <span>Jl. Kesadaran No. 18 Rt. 003 Rw. 005, Kel. Pondok Benda, Kec. Pamulang, Kota Tangerang Selatan, Banten 15416</span>
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-mobile-alt mt-1 mr-3 text-[#C5A059]"></i> 
+                                <span>+62 813 8132 2865 (Call & Whatsapp)</span>
+                            </li>
+                            <li class="flex items-center"><i class="fas fa-envelope mt-1 mr-3 text-[#C5A059]"></i> 
+                                <span>hendrapratama.advokat@gmail.com</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- Map Placeholder -->
                 <div>
                     <h4 class="text-lg font-bold mb-6 text-[#C5A059]">Lokasi</h4>
-                    <div class="bg-gray-700 w-full h-40 rounded flex items-center justify-center text-gray-400 text-sm">
-                        <!-- Embed Google Map Here -->
-                        [Google Maps Embed]
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <h5 class="font-bold text-white mb-2 text-sm">Kantor Pusat</h5>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.790952135995!2d106.80686872526022!3d-6.291183643697766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1fa5b9f59a3%3A0x772f6f7bc1fbc6c0!2sMenara%20165!5e0!3m2!1sid!2sid!4v1765092082690!5m2!1sid!2sid" width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div>
+                            <h5 class="font-bold text-white mb-2 text-sm">Kantor Cabang</h5>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3508150107928!2d106.7137987752607!3d-6.348602093641248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e585d81e85fb%3A0x9e181e14c31e9aa4!2sJl.%20Kesadaran%20No.18%2C%20Pd.%20Benda%2C%20Kec.%20Pamulang%2C%20Kota%20Tangerang%20Selatan%2C%20Banten%2015416!5e0!3m2!1sid!2sid!4v1765092180043!5m2!1sid!2sid" width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -374,13 +413,39 @@
         </div>
     </footer>
 
+    <!-- BOTTOM NAVIGATION (MOBILE ONLY) -->
+    <nav class="md:hidden fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t border-gray-200 z-40">
+        <div class="flex justify-around items-center py-2">
+            <a href="#home" class="flex flex-col items-center text-gray-600 hover:text-[#C5A059] transition">
+                <i class="fas fa-home text-xl mb-1"></i>
+                <span class="text-xs font-medium">Beranda</span>
+            </a>
+            <a href="#about" class="flex flex-col items-center text-gray-600 hover:text-[#C5A059] transition">
+                <i class="fas fa-user text-xl mb-1"></i>
+                <span class="text-xs font-medium">Tentang</span>
+            </a>
+            <a href="#services" class="flex flex-col items-center text-gray-600 hover:text-[#C5A059] transition">
+                <i class="fas fa-briefcase text-xl mb-1"></i>
+                <span class="text-xs font-medium">Layanan</span>
+            </a>
+            <a href="#blog" class="flex flex-col items-center text-gray-600 hover:text-[#C5A059] transition">
+                <i class="fas fa-newspaper text-xl mb-1"></i>
+                <span class="text-xs font-medium">Blog</span>
+            </a>
+            <a href="https://wa.me/6281282820904?text=Halo%20HPP%20Law%20Office,%20saya%20ingin%20konsultasi." class="flex flex-col items-center text-gray-600 hover:text-[#C5A059] transition">
+                <i class="fas fa-phone text-xl mb-1"></i>
+                <span class="text-xs font-medium">Kontak</span>
+            </a>
+        </div>
+    </nav>
+
     <!-- FLOATING WHATSAPP BUTTON (FIXED) -->
-    <a href="https://wa.me/6281282820904?text=Halo%20HPP%20Law%20Office,%20saya%20tertarik%20untuk%20konsultasi%20hukum." 
+    <a href="https://wa.me/6281282820904?text=Halo%20HPP%20Law%20Office,%20saya%20tertarik%20untuk%20konsultasi%20hukum."
        target="_blank"
-       class="fixed bottom-8 right-8 bg-[#25d366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:bg-[#128C7E] transition-all duration-300 z-50 hover:scale-110 group">
-        <i class="fab fa-whatsapp text-4xl"></i>
+       class="fixed bottom-20 right-4 md:bottom-8 md:right-8 bg-[#25d366] text-white w-12 h-12 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-lg hover:bg-[#128C7E] transition-all duration-300 z-50 hover:scale-110 group">
+        <i class="fab fa-whatsapp text-2xl md:text-4xl"></i>
         <!-- Tooltip -->
-        <span class="absolute right-20 bg-white text-gray-800 px-4 py-2 rounded shadow-md text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+        <span class="absolute right-16 md:right-20 bg-white text-gray-800 px-4 py-2 rounded shadow-md text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
             Chat Konsultasi
         </span>
     </a>
