@@ -74,15 +74,20 @@
                 </div>
 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="index.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Home</a>
-                    <a href="our-story.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Our Story</a>
-                    <a href="visi-misi.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Visi & Misi</a>
-                    <a href="layanan.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Layanan</a>
-                    <a href="partner.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Partner</a>
-                    <a href="contact.html" class="navy-bg text-white px-6 py-2 rounded-full font-medium hover:bg-[#C5A059] transition shadow-lg">
-                        Contact
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="index.html" data-i18n="nav.home" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Home</a>
+                    <a href="our-story.html" data-i18n="nav.ourStory" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Our Story</a>
+                    <a href="visi-misi.html" data-i18n="nav.visiMisi" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Visi &amp; Misi</a>
+                    <a href="layanan.html" data-i18n="nav.layanan" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Layanan</a>
+                    <a href="partner.html" data-i18n="nav.partner" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Partner</a>
+                    <a href="contact.html" class="navy-bg text-white px-5 py-2 rounded-full font-medium hover:bg-[#C5A059] transition shadow-lg">
+                        <span data-i18n="nav.contact">Contact</span>
                     </a>
+                    <!-- Language toggle (ID/EN) -->
+                    <div id="lang-toggle" class="ml-4 flex items-center bg-gray-100 rounded-full p-1" role="group" aria-label="Language switch">
+                        <button data-lang-btn="id" aria-label="Bahasa Indonesia" class="flex items-center px-3 py-1 rounded-full text-sm font-semibold">ID</button>
+                        <button data-lang-btn="en" aria-label="English" class="flex items-center px-3 py-1 rounded-full text-sm font-semibold">EN</button>
+                    </div>
                 </div>
 
 
@@ -107,9 +112,9 @@
     <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Mitra Kerja Sama Kami</h2>
+                <h2 data-i18n="partner.title" class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Mitra Kerja Sama Kami</h2>
                 <div class="w-24 h-1 gold-bg mx-auto rounded"></div>
-                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Kami bekerja sama dengan berbagai institusi dan profesional terkemuka untuk memberikan layanan hukum yang komprehensif dan berkualitas tinggi.</p>
+                <p data-i18n="partner.desc" class="mt-4 text-gray-600 max-w-2xl mx-auto">Kami bekerja sama dengan berbagai institusi dan profesional terkemuka untuk memberikan layanan hukum yang komprehensif dan berkualitas tinggi.</p>
             </div>
 
             <!-- Client Sectors & Professional Network -->
@@ -143,7 +148,8 @@
 
                 <div class="bg-slate-50 p-8 rounded-lg">
                     <h3 class="text-2xl font-bold mb-4 text-slate-900">Jaringan Profesional</h3>
-                    <p class="text-gray-600 mb-6">Kami memiliki jaringan yang kuat dengan notaris, akuntan publik, konsultan pajak, dan konsultan bisnis untuk memberikan solusi yang terintegrasi bagi klien.</p>
+                        <p data-i18n="partner.network.desc" class="text-gray-600 mb-6">Kami memiliki jaringan yang kuat dengan notaris, akuntan publik, konsultan pajak, dan konsultan bisnis untuk memberikan solusi yang terintegrasi bagi klien.</p>
+                        <h3 data-i18n="partner.network.title" class="text-2xl font-bold mb-4 text-slate-900">Jaringan Profesional</h3>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div class="flex items-center">
                             <i class="fas fa-user-tie gold-text mr-3"></i>
@@ -343,3 +349,4 @@
 
 </body>
 </html>
+<script src="js/i18n.js"></script>

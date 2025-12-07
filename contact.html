@@ -29,13 +29,20 @@
                         HPP <span class="text-sm font-light block -mt-1 gold-text tracking-widest">LAW OFFICE</span>
                     </div>
                 </div>
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="index.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Home</a>
-                    <a href="our-story.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Our Story</a>
-                    <a href="visi-misi.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Visi & Misi</a>
-                    <a href="layanan.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Layanan</a>
-                    <a href="partner.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Partner</a>
-                    <a href="contact.html" class="navy-bg text-white px-6 py-2 rounded-full font-medium hover:bg-[#C5A059] transition shadow-lg">Contact</a>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="index.html" data-i18n="nav.home" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Home</a>
+                    <a href="our-story.html" data-i18n="nav.ourStory" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Our Story</a>
+                    <a href="visi-misi.html" data-i18n="nav.visiMisi" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Visi &amp; Misi</a>
+                    <a href="layanan.html" data-i18n="nav.layanan" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Layanan</a>
+                    <a href="partner.html" data-i18n="nav.partner" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Partner</a>
+                    <a href="contact.html" class="navy-bg text-white px-5 py-2 rounded-full font-medium hover:bg-[#C5A059] transition shadow-lg">
+                        <span data-i18n="nav.contact">Contact</span>
+                    </a>
+                    <!-- Language toggle (flags) -->
+                    <div id="lang-toggle" class="ml-4 flex items-center bg-gray-100 rounded-full p-1" role="group" aria-label="Language switch">
+                        <button data-lang-btn="id" aria-label="Bahasa Indonesia" class="flex items-center px-3 py-1 rounded-full text-sm font-semibold">ID</button>
+                        <button data-lang-btn="en" aria-label="English" class="flex items-center px-3 py-1 rounded-full text-sm font-semibold">EN</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -195,3 +202,4 @@
 
 </body>
 </html>
+<script src="js/i18n.js"></script>

@@ -75,15 +75,20 @@
                 </div>
 
                 <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="index.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Home</a>
-                    <a href="our-story.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Our Story</a>
-                    <a href="visi-misi.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Visi & Misi</a>
-                    <a href="layanan.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Layanan</a>
-                    <a href="partner.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Partner</a>
-                    <a href="contact.html" class="navy-bg text-white px-6 py-2 rounded-full font-medium hover:bg-[#C5A059] transition shadow-lg">
-                        Contact
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="index.html" data-i18n="nav.home" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Home</a>
+                    <a href="our-story.html" data-i18n="nav.ourStory" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Our Story</a>
+                    <a href="visi-misi.html" data-i18n="nav.visiMisi" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Visi &amp; Misi</a>
+                    <a href="layanan.html" data-i18n="nav.layanan" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Layanan</a>
+                    <a href="partner.html" data-i18n="nav.partner" class="text-gray-700 hover:text-[#C5A059] font-medium transition">Partner</a>
+                    <a href="contact.html" class="navy-bg text-white px-5 py-2 rounded-full font-medium hover:bg-[#C5A059] transition shadow-lg">
+                        <span data-i18n="nav.contact">Contact</span>
                     </a>
+                    <!-- Language toggle (flags) -->
+                    <div id="lang-toggle" class="ml-4 flex items-center bg-gray-100 rounded-full p-1" role="group" aria-label="Language switch">
+                        <button data-lang-btn="id" aria-label="Bahasa Indonesia" class="flex items-center px-3 py-1 rounded-full text-sm font-semibold">ID</button>
+                        <button data-lang-btn="en" aria-label="English" class="flex items-center px-3 py-1 rounded-full text-sm font-semibold">EN</button>
+                    </div>
                 </div>
 
 
@@ -107,10 +112,10 @@
     <!-- SERVICES SECTION -->
     <section class="py-20 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Area Praktik & Layanan</h2>
+                <div class="text-center mb-16">
+                <h2 data-i18n="services.title" class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Area Praktik &amp; Layanan</h2>
                 <div class="w-24 h-1 gold-bg mx-auto rounded"></div>
-                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Kami menyediakan solusi hukum terintegrasi mulai dari pendirian badan usaha, litigasi, hingga perlindungan aset intelektual.</p>
+                <p data-i18n="services.desc" class="mt-4 text-gray-600 max-w-2xl mx-auto">Kami menyediakan solusi hukum terintegrasi mulai dari pendirian badan usaha, litigasi, hingga perlindungan aset intelektual.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -119,7 +124,7 @@
                     <div class="w-14 h-14 bg-slate-100 rounded-full flex items-center justify-center mb-6 text-slate-900">
                         <i class="fas fa-building text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-slate-800">Hukum Bisnis & Korporasi</h3>
+                    <h3 data-i18n="corp.title" class="text-xl font-bold mb-3 text-slate-800">Hukum Bisnis &amp; Korporasi</h3>
                     <p class="text-gray-600 text-sm leading-relaxed mb-4">
                         Pendirian PT, Perizinan OSS, Legal Audit, Compliance System, hingga merger dan akuisisi. Kami memastikan bisnis Anda berjalan sesuai regulasi.
                     </p>
@@ -131,7 +136,7 @@
                     <div class="w-14 h-14 bg-slate-100 rounded-full flex items-center justify-center mb-6 text-slate-900">
                         <i class="fas fa-copyright text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-slate-800">Kekayaan Intelektual (HAKI)</h3>
+                    <h3 data-i18n="haki.title" class="text-xl font-bold mb-3 text-slate-800">Kekayaan Intelektual (HAKI)</h3>
                     <p class="text-gray-600 text-sm leading-relaxed mb-4">
                         Pendaftaran dan perlindungan Merek, Paten, Hak Cipta, serta Desain Industri. Lindungi aset tak berwujud Anda dari sengketa.
                     </p>
@@ -143,7 +148,7 @@
                     <div class="w-14 h-14 bg-slate-100 rounded-full flex items-center justify-center mb-6 text-slate-900">
                         <i class="fas fa-gavel text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-slate-800">Litigasi & Sengketa</h3>
+                    <h3 data-i18n="litigation.title" class="text-xl font-bold mb-3 text-slate-800">Litigasi &amp; Sengketa</h3>
                     <p class="text-gray-600 text-sm leading-relaxed mb-4">
                         Pendampingan hukum di Pengadilan Negeri hingga Mahkamah Agung (Pidana/Perdata), serta penyelesaian via Mediasi & Arbitrase.
                     </p>
@@ -276,7 +281,7 @@
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h3 class="text-2xl font-bold text-slate-900 mb-6">Litigasi dan Alternatif Penyelesaian</h3>
+                        <h3 data-i18n="litigation.subtitle" class="text-2xl font-bold text-slate-900 mb-6">Litigasi dan Alternatif Penyelesaian</h3>
                         <ul class="space-y-4">
                             <li class="flex items-start">
                                 <i class="fas fa-check-circle gold-text mr-3 mt-1"></i>
@@ -313,7 +318,7 @@
                         <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Industrial Relation" class="rounded-lg shadow-lg w-full">
                     </div>
                     <div>
-                        <h3 class="text-2xl font-bold text-slate-900 mb-6">Layanan Hubungan Industrial</h3>
+                        <h3 data-i18n="industrial.title" class="text-2xl font-bold text-slate-900 mb-6">Layanan Hubungan Industrial</h3>
                         <ul class="space-y-4">
                             <li class="flex items-start">
                                 <i class="fas fa-check-circle gold-text mr-3 mt-1"></i>
@@ -340,7 +345,7 @@
                 </div>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h3 class="text-2xl font-bold text-slate-900 mb-6">Keluarga &amp; Perencanaan Kekayaan</h3>
+                        <h3 data-i18n="family.title" class="text-2xl font-bold text-slate-900 mb-6">Keluarga &amp; Perencanaan Kekayaan</h3>
                         <ul class="space-y-4">
                             <li class="flex items-start">
                                 <i class="fas fa-check-circle gold-text mr-3 mt-1"></i>
@@ -488,3 +493,4 @@
 
 </body>
 </html>
+<script src="js/i18n.js"></script>
