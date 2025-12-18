@@ -19,6 +19,33 @@
         .card { transition: transform .25s ease, box-shadow .25s ease; }
         .card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(2,6,23,0.12); }
         .focus-ring:focus { outline: 3px solid rgba(197,160,89,0.25); outline-offset: 2px; }
+        .lang-switch-container {
+            display: flex;
+            border-radius: 9999px;
+            background-color: #f3f4f6;
+            border: 1px solid #e5e7eb;
+            overflow: hidden;
+        }
+
+        .lang-switch {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #4b5563;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .lang-switch.active {
+            background-color: #C5A059;
+            color: #ffffff;
+        }
+
+        .lang-switch:not(.active):hover {
+            background-color: #e5e7eb;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -42,9 +69,9 @@
                     <a href="layanan.html" class="text-gray-700 hover:text-[#C5A059] font-medium transition" data-i18n="nav.layanan">Layanan</a>
                     <a href="contact.html" class="navy-bg text-white px-6 py-2 rounded-full font-medium hover:bg-[#C5A059] transition shadow-lg" data-i18n="nav.contact">Contact</a>
                 </div>
-                <div class="ml-4 flex items-center gap-2 lang-switch-container">
-                    <button class="lang-switch text-sm px-2 py-1" data-lang="id" aria-label="Bahasa Indonesia">ID</button>
-                    <button class="lang-switch text-sm px-2 py-1" data-lang="en" aria-label="English">EN</button>
+                <div class="lang-switch-container">
+                    <button class="lang-switch" data-lang="id" aria-label="Bahasa Indonesia">ID</button>
+                    <button class="lang-switch" data-lang="en" aria-label="English">EN</button>
                 </div>
             </div>
         </div>
