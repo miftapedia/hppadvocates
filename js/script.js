@@ -75,4 +75,33 @@ document.addEventListener('DOMContentLoaded', () => {
             requestAnimationFrame(animation);
         });
     }
+
+    // --- Active Nav Link ---
+    // Handle cases where the path is empty (e.g. root domain) which should point to index.html
+    let currentPagePath = window.location.pathname.split('/').pop();
+    if (currentPagePath === '') {
+        currentPagePath = 'index.html';
+    }
+
+
+    // Desktop menu
+    const desktopLinks = document.querySelectorAll('#desktop-menu a');
+    desktopLinks.forEach(link => {
+        const linkPath = link.getAttribute('href').split('/').pop();
+        if (linkPath === currentPagePath) {
+            // For the contact button, we don't add the class, we just want to highlight the others
+            if (!link.classList.contains('navy-bg')) {
+                 link.classList.add('active-link');
+            }
+        }
+    });
+
+    // Mobile menu
+    const mobileLinks = document.querySelectorAll('#mobile-menu a');
+    mobileLinks.forEach(link => {
+        const linkPath = link.getAttribute('href').split('/').pop();
+        if (linkPath === currentPagePath) {
+            link.classList.add('mobile-active-link');
+        }
+    });
 });
